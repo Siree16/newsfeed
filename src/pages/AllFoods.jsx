@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CommonSection from '../components/UI/common-section/CommonSection';
 import Helmet from '../components/Helmet/Helmet';
 import { Container, Row, Col } from 'reactstrap';
@@ -7,10 +7,13 @@ import ProductCard from '../components/UI/product-card/ProductCard';
 import '../styles/all-foods.css';
 import ReactPaginate from 'react-paginate';
 import '../styles/pagination.css';
+import fetchNews from './newsService';
 
 const AllFoods = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [pageNumber, setPageNumber] = useState(0);
+  const [category, setCategory] = useState('general'); // Default category
+  const [news, setNews] = useState([]);
   // eslint-disable-next-line array-callback-return
   const searchedProduct = products.filter((item) => {
     if (searchTerm.value === '') {
@@ -26,13 +29,23 @@ const AllFoods = () => {
     visitedPage + productPerPage
   );
 
+  useEffect(() => {
+    // Fetch news articles when the component mounts and when the category changes
+    const fetchNewsByCategory = async () => {
+      const articles = await fetchNews(category);
+      setNews(articles);
+    };
+
+    fetchNewsByCategory();
+  }, [category]);
+
   const pageCount = Math.ceil(searchedProduct.length / productPerPage);
   const changePage = ({ selected }) => {
     setPageNumber(selected);
   };
   return (
     <Helmet title='All Foods'>
-      <CommonSection title='All Foods' />
+      
       <section>
         <Container>
           <Row>
@@ -61,12 +74,22 @@ const AllFoods = () => {
               </div>
             </Col>
 
-            {displayPage.map((item) => (
+
+              {/* Render the news articles */}
+              {news.map((article) => (
+                <Col lg='3' md='4' sm='6' xs='6' key={article.title} className='mb-4'>
+                  <h3>{article.title}</h3>
+                  <p>{article.description}</p>
+                </Col>
+              ))}
+              <div>
+
+            {/* {displayPage.map((item) => (
               <Col lg='3' md='4' sm='6' xs='6' key={item.id} className='mb-4'>
                 <ProductCard item={item} />
               </Col>
             ))}
-            <div>
+            <div> */}
               <ReactPaginate
                 pageCount={pageCount}
                 onPageChange={changePage}

@@ -16,7 +16,7 @@ const Register = () => {
   };
   return (
     <Helmet title='Register'>
-      <CommonSection title='Register' />
+   
       <section>
         <Container>
           <Row>

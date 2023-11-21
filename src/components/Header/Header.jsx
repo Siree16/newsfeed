@@ -13,8 +13,8 @@ const nav__links = [
     path: '/home',
   },
   {
-    display: 'Foods',
-    path: '/foods',
+    display: 'News',
+    path: '/news',
   },
   {
     display: 'Cart',
@@ -80,7 +80,7 @@ console.log("Current User",user)
             </div>
           </div>
           {/* ======= nav right icons ======= */}
-          <div className='nav__right d-flex align-items-center gap-4'>
+          <div className='nav__right d-flex align-items-right gap-5'>
            
           <span className='cart__icon' onClick={toggleCart}>
               <i className='ri-shopping-basket-line' />

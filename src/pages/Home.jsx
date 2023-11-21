@@ -137,8 +137,8 @@ const Home = () => {
                     category === 'BURGER' ? 'foodBtnActive' : ''
                   }`}
                 >
-                  <img src={foodCategoryImg01} alt='' />
-                  Burger
+                  {/* <img src={foodCategoryImg01} alt='' /> */}
+                  Audio News
                 </button>
                 <button
                   onClick={() => setCategory('PIZZA')}
@@ -146,8 +146,8 @@ const Home = () => {
                     category === 'PIZZA' ? 'foodBtnActive' : ''
                   }`}
                 >
-                  <img src={foodCategoryImg02} alt='' />
-                  Pizza
+                  {/* <img src={foodCategoryImg02} alt='' /> */}
+                  Newspapers
                 </button>
                 <button
                   onClick={() => setCategory('BREAD')}
@@ -155,8 +155,8 @@ const Home = () => {
                     category === 'BREAD' ? 'foodBtnActive' : ''
                   }`}
                 >
-                  <img src={foodCategoryImg03} alt='' />
-                  Bread
+                  {/* <img src={foodCategoryImg03} alt='' /> */}
+                  e-News
                 </button>
               </div>
             </Col>
