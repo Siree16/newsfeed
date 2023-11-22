@@ -1,8 +1,8 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import React from 'react';
 import Home from '../pages/Home';
-import AllFoods from '../pages/AllFoods';
-import FoodDetails from '../pages/FoodDetails';
+import AllNews from '../pages/AllNews';
+import NewsDetails from '../pages/NewsDetails';
 import Cart from '../pages/Cart';
 import Checkout from '../pages/Checkout';
 import Contact from '../pages/Contact';
@@ -17,8 +17,8 @@ const Routers = () => {
       <Route path='/home' element={<Home />} />
       <Route path='/siree' element={<Siree />} />
       <Route path='/new_login' element={<newLogin />} />
-      <Route path='/news' element={<AllFoods />} />
-      <Route path='/foods/:id' element={<FoodDetails />} />
+      <Route path='/news' element={<AllNews />} />
+      <Route path='/news/:id' element={<NewsDetails />} />
       <Route path='/checkout' element={<Checkout />} />
       <Route path='/login' element={<Login />} />
       <Route path='/register' element={<Register />} />

@@ -12,7 +12,7 @@ const categoryData = [
     imgUrl: categoryImg01,
   },
   {
-    display: 'Pizza',
+    display: 'Newspapers',
     imgUrl: categoryImg02,
   },
   {

@@ -17,7 +17,7 @@ const Home = () => {
   // const [hotPizza, setHotPizza] = useState([]);
 
   // useEffect(() => {
-  //   const filteredPizza = products.filter((item) => item.category === 'Pizza');
+  //   const filteredPizza = products.filter((item) => item.category === 'Newspapers');
   //   const slicePizza = filteredPizza.slice(0, 4);
   //   setHotPizza(slicePizza);
   // }, []);
@@ -25,21 +25,21 @@ const Home = () => {
     if (category === 'ALL') {
       setAllProducts(products);
     }
-    if (category === 'BURGER') {
+    if (category === 'Audio News') {
       const filteredProducts = products.filter(
-        (item) => item.category === 'Burger'
+        (item) => item.category === 'Audio News'
       );
       setAllProducts(filteredProducts);
     }
-    if (category === 'PIZZA') {
+    if (category === 'Newspapers') {
       const filteredProducts = products.filter(
-        (item) => item.category === 'Pizza'
+        (item) => item.category === 'Newspapers'
       );
       setAllProducts(filteredProducts);
     }
-    if (category === 'BREAD') {
+    if (category === 'e-news') {
       const filteredProducts = products.filter(
-        (item) => item.category === 'Bread'
+        (item) => item.category === 'e-news'
       );
       setAllProducts(filteredProducts);
     }
@@ -108,27 +108,27 @@ const Home = () => {
                   All
                 </button>
                 <button
-                  onClick={() => setCategory('BURGER')}
+                  onClick={() => setCategory('Audio News')}
                   className={`d-flex align-items-center gap-2 Rs.{
-                    category === 'BURGER' ? 'foodBtnActive' : ''
+                    category === 'Audio News' ? 'foodBtnActive' : ''
                   }`}
                 >
                   {/* <img src={foodCategoryImg01} alt='' /> */}
                   Audio News
                 </button>
                 <button
-                  onClick={() => setCategory('PIZZA')}
+                  onClick={() => setCategory('Newspapers')}
                   className={`d-flex align-items-center gap-2 Rs.{
-                    category === 'PIZZA' ? 'foodBtnActive' : ''
+                    category === 'Newspapers' ? 'foodBtnActive' : ''
                   }`}
                 >
                   {/* <img src={foodCategoryImg02} alt='' /> */}
                   Newspapers
                 </button>
                 <button
-                  onClick={() => setCategory('BREAD')}
+                  onClick={() => setCategory('e-news')}
                   className={`d-flex align-items-center gap-2 Rs.{
-                    category === 'BREAD' ? 'foodBtnActive' : ''
+                    category === 'e-news' ? 'foodBtnActive' : ''
                   }`}
                 >
                   {/* <img src={foodCategoryImg03} alt='' /> */}

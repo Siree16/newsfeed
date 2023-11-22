@@ -1,26 +1,22 @@
 // all images imported from images directory
 import product_01_image_01 from '../images/tunein.png';
-import product_01_image_02 from '../images/product_01.1.jpg';
-import product_01_image_03 from '../images/product_01.3.jpg';
 import product_01_image_07 from '../images/spotify.png';
 
 
 import product_02_image_01 from '../images/hindustan.png';
 import product_02_image_02 from '../images/hindu.jpg';
-import product_02_image_03 from '../images/product_2.3.jpg';
+
 
 import product_03_image_01 from '../images/toi.png';
 import product_03_image_02 from '../images/dainikjag.png';
-import product_03_image_03 from '../images/product_3.3.jpg';
+
 
 import product_04_image_01 from '../images/cnn.jpg';
 import product_04_image_02 from '../images/dainikpat.jpg';
-import product_04_image_03 from '../images/product_4.3.png';
+
 
 import product_05_image_01 from '../images/audible.png';
 import product_05_image_02 from '../images/youtube.png';
-import product_05_image_03 from '../images/product_09.jpg';
-
 import product_06_image_01 from '../images/wakeup.jpg';
 import product_06_image_02 from '../images/loksabha.jpg';
 import product_06_image_03 from '../images/rajyasabha.jpg';
@@ -32,7 +28,7 @@ const products = [
     title: 'TuneIn',
     price: 24.0,
     image01: product_01_image_01,
-    category: 'Burger',
+    category: 'Audio News',
 
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ',
   },
@@ -42,7 +38,7 @@ const products = [
     title: 'Hindustan Times',
     price: 115.0,
     image01: product_02_image_01,
-    category: 'Pizza',
+    category: 'Newspapers',
 
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.',
   },
@@ -52,7 +48,7 @@ const products = [
     title: 'The Times of India',
     price: 110.0,
     image01: product_03_image_01,
-    category: 'Pizza',
+    category: 'Newspapers',
 
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.',
   },
@@ -62,7 +58,7 @@ const products = [
     title: 'CNN',
     price: 110.0,
     image01: product_04_image_01,
-    category: 'Pizza',
+    category: 'Newspapers',
 
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.',
   },
@@ -72,7 +68,7 @@ const products = [
     title: 'Audible',
     price: 24.0,
     image01: product_05_image_01,
-    category: 'Burger',
+    category: 'Audio News',
 
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.',
   },
@@ -81,7 +77,7 @@ const products = [
     title: 'Spotify',
     price: 24.0,
     image01: product_01_image_07,
-    category: 'Burger',
+    category: 'Audio News',
 
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.',
   },
@@ -91,7 +87,7 @@ const products = [
     title: 'The Hindu',
     price: 115.0,
     image01: product_02_image_02,
-    category: 'Pizza',
+    category: 'Newspapers',
 
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.',
   },
@@ -101,7 +97,7 @@ const products = [
     title: 'Dainik Jagran',
     price: 110.0,
     image01: product_03_image_02,
-    category: 'Pizza',
+    category: 'Newspapers',
 
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.',
   },
@@ -111,7 +107,7 @@ const products = [
     title: 'Dainik Patrika',
     price: 110.0,
     image01: product_04_image_02,
-    category: 'Pizza',
+    category: 'Newspapers',
 
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.',
   },
@@ -121,7 +117,7 @@ const products = [
     title: 'Youtube Premium',
     price: 24.0,
     image01: product_05_image_02,
-    category: 'Burger',
+    category: 'Audio News',
 
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.',
   },
@@ -131,7 +127,7 @@ const products = [
     title: 'Wake Up India',
     price: 35.0,
     image01: product_06_image_01,
-    category: 'Bread',
+    category: 'e-news',
 
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.',
   },
@@ -141,7 +137,7 @@ const products = [
     title: 'Lok Sabha',
     price: 35.0,
     image01: product_06_image_02,
-    category: 'Bread',
+    category: 'e-news',
 
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.',
   },
@@ -151,7 +147,7 @@ const products = [
     title: 'Rajyasabha',
     price: 35.0,
     image01: product_06_image_03,
-    category: 'Bread',
+    category: 'e-news',
 
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.',
   },
