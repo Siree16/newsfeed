@@ -23,7 +23,8 @@ const ProductCard = (props) => {
       </div>
       <div className='product__content'>
         <h5>
-          <Link to={`/news/Rs.{id}`}>{title}</Link>
+          {/* <Link to={`/news/Rs.{id}`}>{title}</Link> */}
+          <Link to='/news'>{title}</Link>
         </h5>
         <div className='d-flex align-items-center justify-content-between'>
           <span className='product__price'>Rs.{price}</span>
