@@ -8,10 +8,10 @@ const Checkout = () => {
   const [enteredName, setEnteredName] = useState('');
   const [enteredEmail, setEnteredEmail] = useState('');
   const [enteredNumber, setEnteredNumber] = useState('');
-  const [enteredAddress, setEnteredAddress] = useState('');
-  const [enteredCity, setEnteredCity] = useState('');
-  const [enteredPostalCode, setEnteredPostalCode] = useState('');
-  const [enteredCountry, setEnteredCountry] = useState('');
+  const [ setEnteredAddress] = useState('');
+  const [setEnteredCity] = useState('');
+  const [setEnteredPostalCode] = useState('');
+  const [setEnteredCountry] = useState('');
 
   const cartTotalAmount = useSelector((state) => state.cart.totalAmount);
   const shippingCost = 10;

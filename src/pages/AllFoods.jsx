@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import CommonSection from '../components/UI/common-section/CommonSection';
+
 import Helmet from '../components/Helmet/Helmet';
 import { Container, Row, Col } from 'reactstrap';
 import products from '../assets/fake-data/products';
-import ProductCard from '../components/UI/product-card/ProductCard';
+
 import '../styles/all-foods.css';
 import ReactPaginate from 'react-paginate';
 import '../styles/pagination.css';
@@ -12,7 +12,7 @@ import fetchNews from './newsService';
 const AllFoods = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [pageNumber, setPageNumber] = useState(0);
-  const [category, setCategory] = useState('general'); // Default category
+  const [category] = useState('general'); // Default category
   const [news, setNews] = useState([]);
   // eslint-disable-next-line array-callback-return
   const searchedProduct = products.filter((item) => {
@@ -24,10 +24,10 @@ const AllFoods = () => {
   });
   const productPerPage = 8;
   const visitedPage = pageNumber * productPerPage;
-  const displayPage = searchedProduct.slice(
-    visitedPage,
-    visitedPage + productPerPage
-  );
+  // const displayPage = searchedProduct.slice(
+  //   visitedPage,
+  //   visitedPage + productPerPage
+  // );
 
   useEffect(() => {
     // Fetch news articles when the component mounts and when the category changes

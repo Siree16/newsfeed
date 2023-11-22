@@ -28,7 +28,7 @@ const nav__links = [
 
 const Header = () => {
 
-  const {user,loginWithRedirect,isAuthenticated,logout} =useAuth0();
+  const {user,logout} =useAuth0();
 console.log("Current User",user)
 
   const menuRef = useRef(null);

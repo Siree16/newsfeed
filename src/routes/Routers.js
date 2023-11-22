@@ -8,7 +8,6 @@ import Checkout from '../pages/Checkout';
 import Contact from '../pages/Contact';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
-import newLogin from '../pages/newLogin';
 import Siree from '../pages/Siree';
 
 const Routers = () => {

@@ -3,48 +3,24 @@ import Helmet from '../components/Helmet/Helmet.js';
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
 import heroImg from '../assets/images/hero.png';
 import '../styles/hero-section.css';
-import { Link } from 'react-router-dom';
-import Category from '../components/UI/category/Category.jsx';
 import '../styles/home.css';
-import featureImg01 from '../assets/images/service-01.png';
-import featureImg02 from '../assets/images/service-02.png';
-import featureImg03 from '../assets/images/service-03.png';
 import products from '../assets/fake-data/products.js';
-import foodCategoryImg01 from '../assets/images/hamburger.png';
-import foodCategoryImg02 from '../assets/images/pizza.png';
-import foodCategoryImg03 from '../assets/images/bread.png';
 import ProductCard from '../components/UI/product-card/ProductCard.jsx';
 import whyImg from '../assets/images/location.png';
 import networkImg from '../assets/images/network.png';
-import TestimonialSlider from '../components/UI/slider/TestimonialSlider.jsx';
 
-const featureData = [
-  {
-    title: 'Instant News',
-    imgUrl: featureImg01,
-    desc: "The push notifications are timely, and I appreciate the variety of news categories. It's like having a personalized newsfeed at my fingertips.",
-  },
-  {
-    title: 'Super Duper',
-    imgUrl: featureImg02,
-    desc: "As a news junkie, I've tried many apps, but this one stands out. Fast updates, reliable sources, and a clean layout. Highly recommend!",
-  },
-  {
-    title: 'Easy Read',
-    imgUrl: featureImg03,
-    desc:  "Finally, a news app that keeps me informed without overwhelming me. Love the sleek design and user-friendly interface!" ,
-  },
-];
+
+
 const Home = () => {
   const [category, setCategory] = useState('ALL');
   const [allProducts, setAllProducts] = useState(products);
-  const [hotPizza, setHotPizza] = useState([]);
+  // const [hotPizza, setHotPizza] = useState([]);
 
-  useEffect(() => {
-    const filteredPizza = products.filter((item) => item.category === 'Pizza');
-    const slicePizza = filteredPizza.slice(0, 4);
-    setHotPizza(slicePizza);
-  }, []);
+  // useEffect(() => {
+  //   const filteredPizza = products.filter((item) => item.category === 'Pizza');
+  //   const slicePizza = filteredPizza.slice(0, 4);
+  //   setHotPizza(slicePizza);
+  // }, []);
   useEffect(() => {
     if (category === 'ALL') {
       setAllProducts(products);
