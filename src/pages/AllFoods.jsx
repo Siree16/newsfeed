@@ -11,7 +11,7 @@ import fetchNews from './newsService';
 
 const AllFoods = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [pageNumber, setPageNumber] = useState(0);
+  const [ setPageNumber] = useState(0);
   const [category] = useState('general'); // Default category
   const [news, setNews] = useState([]);
   // eslint-disable-next-line array-callback-return
@@ -23,7 +23,7 @@ const AllFoods = () => {
     }
   });
   const productPerPage = 8;
-  const visitedPage = pageNumber * productPerPage;
+  // const visitedPage = pageNumber * productPerPage;
   // const displayPage = searchedProduct.slice(
   //   visitedPage,
   //   visitedPage + productPerPage
